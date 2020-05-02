@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* The animation code */
+@keyframes example {
+  0%   {color: red;}
+  12.5%  {color: yellow;}
+  25%  {color: blue;}
+  37.5% {color: green;}
+  50%   {color: red;}
+  62.5%  {color: yellow;}
+  75%  {color: blue;}
+  87.5% {color: green;}
+  100% {color: darkgray;}
+}
+
+/* The element to apply the animation to */
+.animation {
+  color: darkgray;
+  text-shadow: 2px 2px maroon;
+  animation-name: example;
+  animation-duration: 20s;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: default; /* Should be removed. Only for demonstration */
+}
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 65%;
+}
+
+.l {
+  width: 21%;
+}
+
+.middle {
+  width: 21%;
+}
+
+.r {
+  width: 21%;
+}
+
+.fr {
+  width: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Make the image fully responsive */
+  .carousel-inner img {
+      width: auto;
+      height: auto;
+}
+
+td:hover {background-color: khaki;}
+table {
+      width: auto;
+      height: auto;
+}
+
+li {
+      width: auto;
+      height: auto;
+}
+
+.footer {
+      width: auto;
+      height: auto;
+}
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us | Otaku PH</title>
+	<link rel="icon" type="image/ico" href="images/logo.png">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  </head>
+  <body style="background-image: url('images/page.jpg')">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="images/logo.png"><img src="images/logo.png" alt="Logo" height="35" class="rounded-circle"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html">Home </a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="stores.html">Stores</a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="products.html">Products</a>
+                   <a class="dropdown-item" href="news.html">News</a>
+				   <a class="dropdown-item" href="faq.html">FAQ</a>
+                   <a class="dropdown-item" href="contact.html">Contact</a>
+                   <div class="dropdown-divider"></div>
+				   <a class="dropdown-item" href="about_us.html">About Us<span class="sr-only">(current)</span></a>
+                   <a class="dropdown-item active" href="job_hiring.html">Job Hiring<span class="sr-only">(current)</span></a>
+                </div>
+             </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+       </div>
+    </nav>
+<div style="margin-left: 200px; margin-right: 200px; background-color: whitesmoke">
+    <div class="jumbotron jumbotron-fluid text-center" style="background-image: url('images/background.jpg'); background-blend-mode: normal">
+       <h1 class="display-4" style="color: whitesmoke; text-shadow: 2px 2px maroon"><b>Otaku PH</b></h1>
+       <p class="lead" style="color: whitesmoke; text-shadow: 2px 2px maroon"><b>A Comic Alley Redistributor</b></p>
+       <hr class="my-4">
+	</div>
+
+<div align="center" style="overflow-x:auto; text-align: center">
+<h1 align="center"><div class="animation">Job Hiring</div></h1>
+<img src="images/job_hiring.jpg"ss style="padding: 35px; overflow-x:auto; width: 900px">
+</div>
+</div>
+
+<div class="footer">
+<div class="row text-center" style="background-color: #3666; align-content: center; color: whitesmoke">
+<div class="column l">
+	<ul style="list-style-type:none; text-align: left; margin-left: 100px; border-right-style: solid">
+		<li><h5>QUICK LINKS</h3></li>
+		<li class="nav-item"><a class="navbar-brand" href="about_us.html">About Us</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="job_hiring.html">Job Hiring</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="index.html">On Sale</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="stores.html">Stores</a></li>
+	</ul>
+</div>
+<div class="column middle">
+	<ul style="list-style-type:none; text-align: left; margin-left: 50px">
+		<li><h5>BEST SELLERS</h3></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://www.comicalley.net/products/Boku-no-Hero-Academia" target="_blank">Boku no Hero Academia</a></li>
+	</ul>
+</div>       
+<div class="column r">
+	<ul style="list-style-type:none; text-align: left; margin-left: 50px; border-left-style: solid">
+		<li><h5>COMMUNITY</h3></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://www.facebook.com/ComicAlleyOfficial/?ref=hl" target="_blank">Facebook</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://www.instagram.com/comic_alley/" target="_blank">Instagram</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://twitter.com/comic_alley" target="_blank">Twitter</a></li>
+		<br>
+		<br>
+	</ul>
+</div>
+<div class="column fr">
+	<ul style="list-style-type:none; text-align: left; margin-right: 100px; border-left-style: solid">
+		<li>@ Copyright 2020 All Rights Reserved</li>
+		<li>Comic Alley |</li>
+		<br>
+		<li>Page Design and Development by:</li>
+		<li>Noel Basañez, Jr.</li>
+		<li>Matt Daniel Padua</li>
+		<li>Tristan Andrei Saura</li>
+		<li>Antonio Raphael Tandoc</li>
+	</ul>
+</div>
+</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

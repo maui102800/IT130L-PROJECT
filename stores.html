@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <style>
+/* The animation code */
+@keyframes example {
+  0%   {color: red;}
+  12.5%  {color: yellow;}
+  25%  {color: blue;}
+  37.5% {color: green;}
+  50%   {color: red;}
+  62.5%  {color: yellow;}
+  75%  {color: blue;}
+  87.5% {color: green;}
+  100% {color: darkgray;}
+}
+
+/* The element to apply the animation to */
+.animation {
+  color: darkgray;
+  text-shadow: 2px 2px maroon;
+  animation-name: example;
+  animation-duration: 20s;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: default; /* Should be removed. Only for demonstration */
+}
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 65%;
+}
+
+.l {
+  width: 21%;
+}
+
+.middle {
+  width: 21%;
+}
+
+.r {
+  width: 21%;
+}
+
+.fr {
+  width: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Make the image fully responsive */
+  .carousel-inner img {
+      width: auto;
+      height: auto;
+}
+
+td:hover {background-color: khaki;}
+table {
+      width: auto;
+      height: auto;
+}
+</style>
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stores | Otaku PH</title>
+	<link rel="icon" type="image/ico" href="images/logo.png">
+
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+  <body style="background-image: url('images/page.jpg')">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="images/logo.png"><img src="images/logo.png" alt="Logo" height="35" class="rounded-circle"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="stores.html">Stores<span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="products.html">Products</a>
+                   <a class="dropdown-item" href="news.html">News</a>
+				   <a class="dropdown-item" href="faq.html">FAQ</a>
+                   <a class="dropdown-item" href="contact.html">Contact</a>
+                   <div class="dropdown-divider"></div>
+				   <a class="dropdown-item" href="about_us.html">About Us</a>
+                   <a class="dropdown-item" href="job_hiring.html">Job Hiring</a>
+                </div>
+             </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+       </div>
+    </nav>
+<div style="margin-left: 200px; margin-right: 200px; background-color: whitesmoke">
+    <div class="jumbotron jumbotron-fluid text-center" style="background-image: url('images/background.jpg'); background-blend-mode: normal">
+       <h1 class="display-4" style="color: whitesmoke; text-shadow: 2px 2px maroon"><b>Otaku PH</b></h1>
+       <p class="lead" style="color: whitesmoke; text-shadow: 2px 2px maroon"><b>A Comic Alley Redistributor</b></p>
+       <hr class="my-4">
+	</div>
+
+<div class="row" align="center">
+<div class="column left">
+<table border="solid black 10px">
+	<tr align="center">
+		<th><div class="animation">Animes</div></th>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Naruto-Shippuden" target="_blank">Naruto Shippuden</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Fairy-Tail" target="_blank">Fairy Tail</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Attack-on-Titan" target="_blank">Attack on Titan</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Boku-no-Hero-Academia" target="_blank">Boku no Hero Academia</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Tokyo-Ghoul" target="_blank">Tokyo Ghoul</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/One-Punch-Man" target="_blank">One Punch Man</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Sword-Art-Online" target="_blank">Sword Art Online</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Nanatsu-No-Taizai" target="_blank">Nanatsu No Taizai</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Tate-no-Yuusha-no-Nariagari" target="_blank">Tate no Yuusha no Nariagari</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Demon-Slayer" target="_blank">Demon Slayer</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Love-Live" target="_blank">Love Live</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Card-Captor-Sakura" target="_blank">Card Captor Sakura</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Death-Note" target="_blank">Death Note</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Yuri-On-Ice" target="_blank">Yuri On Ice</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Vocaloid" target="_blank">Vocaloid</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Himouto!-Umaru-chan" target="_blank">Himouto! Umaru-chan</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Other-Anime" target="_blank">Other Animes</a></td>
+	</tr>
+</table>
+
+<br>
+<table border="solid black 10px">
+	<tr align="center">
+		<th><div class="animation">Categories</div></th>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Apparels" target="_blank">Anime Apparels</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Pillows" target="_blank">Anime Pillows</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Clothing-Accessories" target="_blank">Anime Cloting Accessories</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Bags" target="_blank">Anime Bags</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Notebook-and-Pens" target="_blank">Anime Notebooks and Pens</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Button-Pins" target="_blank">Anime Button Pins</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Collectibles" target="_blank">Anime Collectibles</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Keychains" target="_blank">Anime Keychains</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Lanyards" target="_blank">Anime Lanyards</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Mousepads" target="_blank">Anime Mousepads</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Patches" target="_blank">Anime Patches</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Posters" target="_blank">Anime Posters</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Stuffed-Toys" target="_blank">Anime Stuffed Toys</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Umbrella" target="_blank">Anime Umbrellas</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Anime-Wallets" target="_blank">Anime Wallets</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/products/Others" target="_blank">Others</a></td>
+	</tr>
+</table>
+</div>
+
+<div class="column right" style="overflow-x:auto">
+<h1 align="center"><div class="animation">Stores</div></h1>
+<div id="demo" class="carousel slide text-center" data-ride="carousel">
+	
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3" class="active"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+	<li data-target="#demo" data-slide-to="6" class="active"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+    <li data-target="#demo" data-slide-to="8"></li>
+	<li data-target="#demo" data-slide-to="9" class="active"></li>
+    <li data-target="#demo" data-slide-to="10"></li>
+    <li data-target="#demo" data-slide-to="11"></li>
+	<li data-target="#demo" data-slide-to="12"></li>
+  </ul>
+  
+<img src="images/stores.jpg" alt="Stores" width="auto" height="auto">
+<br>
+<br>
+<table border="solid black 10px" style="text-align: left">
+	<tr align="center">
+		<th colspan="4"><div class="animation">Philippine Outlets</th>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/stores/festival-mall" target="_blank">Festival Mall</a></td>
+		<td><a href="https://www.comicalley.net/stores/market-market" target="_blank">Market! Market!</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-mall-asia" target="_blank">SM Mall of Asia</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-manila" target="_blank">SM Manila</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/stores/sm-megamall" target="_blank">SM Megamall</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-north-edsa" target="_blank">SM North Edsa</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-baguio-city" target="_blank">SM Baguio City</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-clark-pampanga" target="_blank">SM Clark - Pampanga</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.comicalley.net/stores/sm-dasmari%C3%B1-cavite" target="_blank">SM Dasmariñas - Cavite</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-sta-rosa-laguna" target="_blank">SM Sta. Rosa - Laguna</a></td>
+		<td><a href="https://www.comicalley.net/stores/sm-city-cebu" target="_blank">SM City Cebu</a></td>
+		<td><a href="https://www.comicalley.net/stores/gaisano-mall-davao-0" target="_blank">Gaisano Mall - Davao</a></td>
+	</tr>
+</table>
+<br>
+<hr align="center" size="10px solid black">
+<table>
+	<tr align="center">
+		<th colspan="3"><h1><div class="animation">New Products</div></h1></th>
+	</tr>
+	<tr height="85">
+		<td><a href="https://www.comicalley.net/products/Naruto-Shippuden" target="_blank"><img src="images/14.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Fairy-Tail" target="_blank"><img src="images/15.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Attack-on-Titan" target="_blank"><img src="images/16.png"></a></td>
+	</tr>
+	<tr height="85">
+		<td><a href="https://www.comicalley.net/products/Boku-no-Hero-Academia" target="_blank"><img src="images/17.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Tokyo-Ghoul" target="_blank"><img src="images/18.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/One-Punch-Man" target="_blank"><img src="images/19.png"></a></td>
+	</tr>
+	<tr height="85">
+		<td><a href="https://www.comicalley.net/products/Sword-Art-Online" target="_blank"><img src="images/20.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Nanatsu-No-Taizai" target="_blank"><img src="images/21.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Tate-no-Yuusha-no-Nariagari" target="_blank"><img src="images/22.png"></a></td>
+	</tr>
+	<tr height="85">
+		<td><a href="https://www.comicalley.net/products/Demon-Slayer" target="_blank"><img src="images/23.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Love-Live" target="_blank"><img src="images/24.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Card-Captor-Sakura" target="_blank"><img src="images/25.png"></a></td>
+	</tr>
+	<tr height="85">
+		<td><a href="https://www.comicalley.net/products/Death-Note" target="_blank"><img src="images/26.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Yuri-On-Ice" target="_blank"><img src="images/27.png"></a></td>
+		<td><a href="https://www.comicalley.net/products/Other-Anime" target="_blank"><img src="images/30.png"></a></td>
+	</tr>
+
+</table>
+</div>
+</div>
+<br>
+</div>
+</div>
+
+<div class="row text-center" style="background-color: #3666; align-content: center; color: whitesmoke">
+<div class="column l">
+	<ul style="list-style-type:none; text-align: left; margin-left: 100px; border-right-style: solid">
+		<li><h5>QUICK LINKS</h3></li>
+		<li class="nav-item"><a class="navbar-brand" href="about_us.html">About Us</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="job_hiring.html">Job Hiring</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="index.html">On Sale</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="stores.html">Stores</a></li>
+	</ul>
+</div>
+<div class="column middle">
+	<ul style="list-style-type:none; text-align: left; margin-left: 50px">
+		<li><h5>BEST SELLERS</h3></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://www.comicalley.net/products/Boku-no-Hero-Academia" target="_blank">Boku no Hero Academia</a></li>
+	</ul>
+</div>       
+<div class="column r">
+	<ul style="list-style-type:none; text-align: left; margin-left: 50px; border-left-style: solid">
+		<li><h5>COMMUNITY</h3></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://www.facebook.com/ComicAlleyOfficial/?ref=hl" target="_blank">Facebook</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://www.instagram.com/comic_alley/" target="_blank">Instagram</a></li>
+		<li class="nav-item"><a class="navbar-brand" href="https://twitter.com/comic_alley" target="_blank">Twitter</a></li>
+		<br>
+		<br>
+	</ul>
+</div>
+<div class="column fr">
+	<ul style="list-style-type:none; text-align: left; margin-right: 100px; border-left-style: solid">
+		<li>@ Copyright 2020 All Rights Reserved</li>
+		<li>Comic Alley |</li>
+		<br>
+		<li>Page Design and Development by:</li>
+		<li>Noel Basañez, Jr.</li>
+		<li>Matt Daniel Padua</li>
+		<li>Tristan Andrei Saura</li>
+		<li>Antonio Raphael Tandoc</li>
+	</ul>
+</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
